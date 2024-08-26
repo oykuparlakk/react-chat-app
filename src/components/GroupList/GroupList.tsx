@@ -55,30 +55,7 @@ const GroupList: React.FC = () => {
               <DoubleTick />
             </GroupInfo>
           </GroupRow>
-          <GroupRow>
-            <GroupImage>
-              <img src={Ellipse4} alt="Group Icon" />
-            </GroupImage>
-            <GroupContent>
-              <h3>Hiking</h3>
-              <p>It’s not going to happen</p>
-            </GroupContent>
-            <GroupInfo>
-              <p>Wednesday, 9.12am</p>
-            </GroupInfo>
-          </GroupRow>
-          <GroupRow>
-            <GroupImage>
-              <img src={Ellipse4} alt="Group Icon" />
-            </GroupImage>
-            <GroupContent>
-              <h3>Hiking</h3>
-              <p>It’s not going to happen</p>
-            </GroupContent>
-            <GroupInfo>
-              <p>Wednesday, 9.12am</p>
-            </GroupInfo>
-          </GroupRow>
+        
         </div>
       </Container>
 
@@ -137,45 +114,8 @@ const GroupList: React.FC = () => {
               <div className="badge">5</div>
             </GroupInfo>
           </GroupRow>
-          <GroupRow>
-            <GroupImage>
-              <img src={Ellipse10} alt="Group Icon" />
-            </GroupImage>
-            <GroupContent>
-              <h3>Victoria H</h3>
-              <p>Okay, brother. let’s see...</p>
-            </GroupContent>
-            <GroupInfo>
-              <p>Wednesday, 11.12am</p>
-              <DoubleTick />
-            </GroupInfo>
-          </GroupRow>
-          <GroupRow>
-            <GroupImage>
-              <img src={Ellipse10} alt="Group Icon" />
-            </GroupImage>
-            <GroupContent>
-              <h3>Victoria H</h3>
-              <p>Okay, brother. let’s see...</p>
-            </GroupContent>
-            <GroupInfo>
-              <p>Wednesday, 11.12am</p>
-              <DoubleTick />
-            </GroupInfo>
-          </GroupRow>
-          <GroupRow>
-            <GroupImage>
-              <img src={Ellipse9} alt="Group Icon" />
-            </GroupImage>
-            <GroupContent>
-              <h3>Bill Gates</h3>
-              <p>Nevermind bro</p>
-            </GroupContent>
-            <GroupInfo>
-              <p>Yesterday, 12.31pm</p>
-              <div className="badge">5</div>
-            </GroupInfo>
-          </GroupRow>
+         
+         
         </div>
       </Container>
     </GroupListContainer>
