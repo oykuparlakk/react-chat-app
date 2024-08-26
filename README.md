@@ -32,20 +32,9 @@ This project is a responsive chat interface that allows users to send and receiv
 
 ## State Management
 
-The project uses **Redux Toolkit** to manage chat state, including messages, input text, and auto-complete suggestions. Here's a breakdown of the key slices:
+The project uses **Redux Toolkit** to manage chat state, including messages, input text, and auto-complete suggestions.
 
-```typescript
-interface ChatState {
-  messages: { text: string; timestamp: number; isUserMessage: boolean }[];
-  inputText: string;
-  suggestions: string[];
-}
 
-const initialState: ChatState = {
-  messages: [],
-  inputText: "",
-  suggestions: [],
-};
 
 
 ### Key Redux Actions:
@@ -59,27 +48,7 @@ const initialState: ChatState = {
 
 The project uses **styled-components** for component-specific styling. A theme with a custom color palette, including primary and gray shades, is used to maintain consistency across the interface.
 
-**Example of the styled `Suggestions` component**:
 
-```javascript
-export const Suggestions = styled.div`
-  position: absolute;
-  top: -120%; // Display above the input
-  left: 0;
-  background-color: white;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-  width: 100%;
-  z-index: 10;
-  max-height: 150px;
-  overflow-y: auto;
-  
-  div {
-    padding: 8px; 
-    cursor: pointer;
 
-    &:hover {
-      background-color: #eee;
-    }
-  }
-`;
+
+
