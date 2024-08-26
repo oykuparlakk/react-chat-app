@@ -1,0 +1,36 @@
+export const theme = {
+  colors: {
+    0: "#FFFFFF",
+    50: "#eff6fc",
+    100: "#e5f0f9",
+    200: "#c5e0f2",
+    300: "#91c7e8",
+    400: "#56a9da",
+    500: "#318fc6",
+    600: "#2172a8",
+    700: "#1c5b88",
+    800: "#3D454D",
+    900: "#6E00FF",
+    950: "#122a3f",
+  },
+  grayPalette: {
+    50: "#F6F6F6",
+    100: "#E7E7E7",
+    200: "#D1D1D1",
+    300: "#B0B0B0",
+    400: "#888888",
+    500: "#6D6D6D",
+    600: "#5D5D5D",
+    700: "#4F4F4F",
+    800: "#454545",
+    900: "#3D3D3D",
+    950: "#303030",
+  },
+  fonts: {
+    primary: `'Roboto', sans-serif`,
+  },
+  spacing: (factor: number) => `${8 * factor}px`,
+  shadows: {
+    default: "0 4px 8px rgba(0, 0, 0, 0.1)",
+  },
+};
