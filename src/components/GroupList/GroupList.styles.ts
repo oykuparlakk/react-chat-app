@@ -1,23 +1,22 @@
 import styled from "styled-components";
 
 export const GroupListContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  padding: 0px 16px 0px 16px;
+  flex: 1;
+  padding: ${(props) => props.theme.spacing(2)};
   border-radius: 25px;
-  max-width: 100%;
   box-sizing: border-box;
-  height: 100%; 
+  height: calc(100vh - 40px); 
+  overflow-y: auto;
+
   @media (max-width: 768px) {
-    width: 100%; 
     padding: ${(props) => props.theme.spacing(1)};
+    height: auto; 
   }
 
   @media (max-width: 425px) {
-    width: 100%;
-    min-width: 480px;
-
     padding: ${(props) => props.theme.spacing(1)};
+    height: auto;
+    min-width: 0;
   }
 `;
 
@@ -32,7 +31,6 @@ export const SearchContainer = styled.div`
   box-sizing: border-box;
   box-shadow: ${({ theme }) => theme.shadows.default};
 
-
   p {
     margin-left: 8px;
     color: #888;
@@ -40,15 +38,21 @@ export const SearchContainer = styled.div`
   }
 
   @media (max-width: 768px) {
-    padding: 8px;
+    padding: 6px;
     p {
       font-size: 12px;
+    }
+  }
+
+  @media (max-width: 425px) {
+    padding: 4px;
+    p {
+      font-size: 10px;
     }
   }
 `;
 
 export const Container = styled.div`
-  flex-grow: 1;
   margin-bottom: 8px;
   background-color: white;
   padding: 13px;
@@ -59,56 +63,37 @@ export const Container = styled.div`
     color: black;
     font-size: 30px;
     margin-bottom: 8px;
-  }
-
-  @media (max-width: 768px) {
-    div {
-      max-height: 110px; 
-      overflow-y: auto;
-    }
-    h2 {
-      color: black;
-      font-size: 16px;
-      margin-bottom: 8px;
-    }
-  }
-
-  @media (max-width: 425px) {
-    div {
-      max-height: 200px; 
-      overflow-y: auto;
-    }
-    h2 {
-      color: black;
-      font-size: 16px;
-      margin-bottom: 8px;
-    }
-  }
-
-
-  @media (max-width: 768px) {
-    h2 {
-      font-size: 14px;
-    }
-  }
-`;
-
-export const PeopleContainer = styled.div`
-  flex-grow: 1;
-  border-radius: 25px;
-  h2 {
-    font-size: 16px;
-    margin-bottom: 8px;
+    padding-:5px;
   }
 
   div {
-    max-height: 200px; 
+    max-height: calc(100vh - 200px);
     overflow-y: auto;
   }
 
   @media (max-width: 768px) {
+    padding: 8px;
+
     h2 {
-      font-size: 14px;
+      font-size: 20px;
+      padding-:5px;
+    }
+
+    div {
+      max-height: 120px; 
+    }
+  }
+
+  @media (max-width: 425px) {
+    padding: 6px;
+
+    h2 {
+      padding:5px;
+      font-size: 16px;
+    }
+
+    div {
+      max-height: 180px; 
     }
   }
 `;
@@ -124,8 +109,11 @@ export const GroupRow = styled.div`
   @media (max-width: 768px) {
     padding: 6px;
   }
-`;
 
+  @media (max-width: 425px) {
+    padding: 4px;
+  }
+`;
 export const GroupImage = styled.div`
   img {
     width: 40px;
@@ -139,8 +127,14 @@ export const GroupImage = styled.div`
       height: 32px;
     }
   }
-`;
 
+  @media (max-width: 425px) {
+    img {
+      width: 28px;
+      height: 28px;
+    }
+  }
+`;
 export const GroupContent = styled.div`
   flex-grow: 1;
   margin-left: 12px;
@@ -148,6 +142,7 @@ export const GroupContent = styled.div`
   h3 {
     font-size: 14px;
     margin-bottom: 2px;
+
   }
 
   p {
@@ -159,12 +154,22 @@ export const GroupContent = styled.div`
     h3 {
       font-size: 12px;
     }
+
     p {
       font-size: 10px;
     }
   }
-`;
 
+  @media (max-width: 425px) {
+    h3 {
+      font-size: 11px;
+    }
+
+    p {
+      font-size: 9px;
+    }
+  }
+`;
 export const GroupInfo = styled.div`
   display: flex;
   flex-direction: column;
@@ -194,4 +199,16 @@ export const GroupInfo = styled.div`
       padding: 2px 4px;
     }
   }
+
+  @media (max-width: 425px) {
+    p {
+      font-size: 9px;
+    }
+
+    .badge {
+      font-size: 7px;
+      padding: 1px 3px;
+    }
+  }
 `;
+

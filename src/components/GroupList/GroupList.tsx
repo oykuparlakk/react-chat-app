@@ -1,12 +1,10 @@
 import React from "react";
 import { DoubleTick, Search } from "../Icons";
 import Ellipse3 from "../../assets/Ellipse3.png";
-import Ellipse4 from "../../assets/Ellipse4.png";
 import Ellipse6 from "../../assets/Ellipse6.png";
 import Ellipse7 from "../../assets/Ellipse7.png";
 import Ellipse8 from "../../assets/Ellipse8.png";
 import Ellipse9 from "../../assets/Ellipse9.png";
-import Ellipse10 from "../../assets/Ellipse10.png";
 
 import {
   GroupListContainer,
@@ -55,7 +53,6 @@ const GroupList: React.FC = () => {
               <DoubleTick />
             </GroupInfo>
           </GroupRow>
-        
         </div>
       </Container>
 
@@ -114,8 +111,6 @@ const GroupList: React.FC = () => {
               <div className="badge">5</div>
             </GroupInfo>
           </GroupRow>
-         
-         
         </div>
       </Container>
     </GroupListContainer>

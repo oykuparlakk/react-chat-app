@@ -10,7 +10,6 @@ const ChatBox: React.FC = () => {
 
   useEffect(() => {
     endOfMessagesRef.current?.scrollIntoView({ behavior: "smooth" });
-
   }, [messages]);
 
   return (

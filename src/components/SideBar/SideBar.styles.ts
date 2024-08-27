@@ -1,66 +1,65 @@
 import styled from "styled-components";
 
 export const SidebarContainer = styled.div`
-  width: 5%;
-  height: 100%;
+  width: 80px; 
   background-color: ${(props) => props.theme.colors[900]};
   color: ${(props) => props.theme.colors[50]};
-  padding: ${(props) => props.theme.spacing(5)};
+  padding: ${(props) => props.theme.spacing(3)};
+  border-radius: 25px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-radius: 25px;
-  position: relative;
+  box-sizing: border-box;
+
+  overflow: hidden;
 
   .icon-container {
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     flex: 1;
-    gap: ${(props) => props.theme.spacing(10)};
+    gap: ${(props) => props.theme.spacing(4)};
+    overflow: hidden;
   }
 
-  @media (max-width: 2560px) {
-    width: 5%;
+  .exit-icon {
+    margin-top: auto;
   }
 
   @media (max-width: 1440px) {
-    width: 7%; 
+    width: 70px;
     .icon-container {
-      gap: ${(props) => props.theme.spacing(6)}; 
+      gap: ${(props) => props.theme.spacing(3)};
     }
   }
 
   @media (max-width: 1024px) {
-    width: 8%;
+    width: 60px;
     .icon-container {
-      gap: ${(props) => props.theme.spacing(5)};
+      gap: ${(props) => props.theme.spacing(2)};
     }
   }
 
   @media (max-width: 768px) {
-    flex-direction: row; 
-    width: 100%; 
+    flex-direction: row;
+    width: 100%;
     height: auto;
-    justify-content: space-evenly;
+    justify-content: space-around;
     padding: ${(props) => props.theme.spacing(2)};
 
     .icon-container {
       flex-direction: row;
-      gap: ${(props) => props.theme.spacing(8)};
+      gap: ${(props) => props.theme.spacing(2)};
     }
   }
 
   @media (max-width: 425px) {
-    flex-direction: row; 
-    justify-content: space-evenly;
-    min-width:470px;
-    padding: ${(props) => props.theme.spacing(3)};
+    width: 100%;
+    padding: ${(props) => props.theme.spacing(2)};
 
     .icon-container {
-      flex-direction: row;
-      gap: ${(props) => props.theme.spacing(2)}; 
+      gap: ${(props) => props.theme.spacing(1)};
     }
   }
 `;

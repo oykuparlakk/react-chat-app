@@ -13,13 +13,9 @@ export const GlobalStyles = createGlobalStyle`
     font-family: ${(props) => props.theme.fonts.primary};
     background-color: ${(props) => props.theme.colors[100]};
     color: ${(props) => props.theme.colors[900]};
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100%;
     width: 100%;
-
-    overflow: hidden; 
+    overflow: auto;
   }
 
   *::-webkit-scrollbar {
@@ -36,18 +32,26 @@ export const GlobalStyles = createGlobalStyle`
   }
 `;
 
+
 export const Container = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: row; 
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: stretch;
   height: 100vh; 
-  width: 100vw;  
+  width: 100vw; 
   padding: ${(props) => props.theme.spacing(2)};
   border-radius: 0; 
 
+  @media (max-width: 1024px) {
+    flex-direction: row; 
+    height: 100vh;
+    overflow: hidden;
+  }
+
   @media (max-width: 768px) {
-    flex-direction: column;
-    height: auto;
+    flex-direction: column; 
+    height: auto; 
+    overflow-y: auto;
   }
 `;
