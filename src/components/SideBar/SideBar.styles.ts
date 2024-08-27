@@ -10,7 +10,6 @@ export const SidebarContainer = styled.div`
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
-
   overflow: hidden;
 
   .icon-container {

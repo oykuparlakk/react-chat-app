@@ -2,10 +2,20 @@ import styled from "styled-components";
 
 export const InputContainer = styled.div`
   display: flex;
-  flex-direction: row; 
+  flex-direction: row;
   width: 100%;
-  position: relative; 
+  position: relative;
+
+
+  @media (max-width: 375px) {
+    flex-direction: column;
+    gap:10px;
+    justify-content: center
+    align-items: center;
+
+  }
 `;
+
 
 export const InputWrapper = styled.div`
   display: flex;
